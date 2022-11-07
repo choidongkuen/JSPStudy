@@ -5,7 +5,9 @@
 <body>
 쿠키 목록<br>
 <%
+	// 웹브라우저가 전송한 쿠키 정보를 Cookie 인스턴스 배열로 받기
 	Cookie[] cookies = request.getCookies();
+
 	if (cookies != null && cookies.length > 0) {
 		for (int i = 0 ; i < cookies.length ; i++) {
 %>
