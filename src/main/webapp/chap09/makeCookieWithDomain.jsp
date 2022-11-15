@@ -1,6 +1,7 @@
 <%@ page contentType = "text/html; charset=utf-8" %>
 <%@ page import = "java.net.URLEncoder" %>
 <%
+	// setDomain() 을 통해 해당 서버의 도메인 or 해당 서버의 상위 서버의 도메인 설정 가능
 	Cookie cookie1 = new Cookie("id", "madvirus");
 	cookie1.setDomain(".somehost.com");
 	response.addCookie(cookie1);
